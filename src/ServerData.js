@@ -73,9 +73,9 @@ export class data extends Component {
             } else {
                 this.setState({
                     "colors": {
-                        "1": 'white',
-                        "2": 'white',
-                        "3": 'white'
+                        "1": 'black',
+                        "2": 'black',
+                        "3": 'black'
                     }
                 })
             };
