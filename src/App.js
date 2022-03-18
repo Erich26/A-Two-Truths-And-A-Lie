@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
+import InputPrompt from './components/InputPrompt';
 import './App.css';
+
+const serverURL = "https://ad4d-108-53-232-66.ngrok.io";
 
 export class App extends Component {
   constructor(props) {
@@ -87,6 +90,7 @@ export class App extends Component {
       prompts: this.state.prompts
     })
     const response = await postToServer(data, 'prompt-vote')
+    console.log(response)
   };
 
   castVote = async(event) => {
@@ -95,6 +99,7 @@ export class App extends Component {
       votePrompt: this.state.vote
     })
     const response = await postToServer(data, 'prompt-vote')
+    console.log(response)
   };
 
   render() {
