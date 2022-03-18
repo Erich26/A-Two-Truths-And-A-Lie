@@ -2,11 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-
+import ServerData from './ServerData'
 
 ReactDOM.render(
   <React.StrictMode>
     <App />
+    <ServerData />
   </React.StrictMode>,
   document.getElementById('root')
 );
